@@ -5,15 +5,16 @@
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="x-apple-disable-message-reformatting">
-  <meta name="color-scheme" content="light only">
-  <meta name="supported-color-schemes" content="light only">
+  <meta name="color-scheme" content="light dark">
+  <meta name="supported-color-schemes" content="light dark">
   <title>SPOTTED 📸 Mira Rajput in the Raglan Tee — Uptownie</title>
   <!--[if mso]>
   <noscript><xml><o:OfficeDocumentSettings><o:PixelsPerInch>96</o:PixelsPerInch></o:OfficeDocumentSettings></xml></noscript>
   <![endif]-->
   <style>
-    @import url('https://fonts.googleapis.com/css2?family=Great+Vibes&family=Playfair+Display:wght@700;800;900&family=Caveat:wght@600;700&family=Oswald:wght@600;700&display=swap');
+    @import url('https://fonts.googleapis.com/css2?family=Great+Vibes&family=Playfair+Display:wght@800;900&family=Caveat:wght@600;700&family=Montserrat:wght@400;600;700;800;900&family=Oswald:wght@700&display=swap');
 
+    /* ── resets ── */
     html,body{margin:0 auto!important;padding:0!important;height:100%!important;width:100%!important;}
     *{-ms-text-size-adjust:100%;-webkit-text-size-adjust:100%;}
     table,td{mso-table-lspace:0pt!important;mso-table-rspace:0pt!important;}
@@ -21,25 +22,120 @@
     img{-ms-interpolation-mode:bicubic;border:0;height:auto;line-height:100%;outline:none;text-decoration:none;}
     a{text-decoration:none;}
 
+    /* ── LIGHT defaults ── */
+    body,.em-bg        { background-color:#F5EDD6!important; }
+    .em-card           { background-color:#FAF4E4!important; }
+    .em-trust-bg       { background-color:#EDE3C8!important; }
+    .em-rule           { border-color:#111111!important; }
+    .em-rule-soft      { border-color:#D8CBA4!important; }
+    .em-rule-dot       { border-color:#C9B98A!important; }
+    .em-logo           { color:#111111!important; }
+    .em-nav a          { color:#111111!important; }
+    .em-nav-div        { border-color:#BBA97A!important; }
+    .em-text           { color:#111111!important; }
+    .em-text-mid       { color:#555555!important; }
+    .em-text-muted     { color:#A4977A!important; }
+    .em-text-link      { color:#7A6E52!important; }
+    .em-pink           { color:#D4106A!important; }
+    .em-gold           { color:#F5C218!important; }
+    .em-script         { color:#D4106A!important; }
+    .em-spotting       { color:#111111!important; }
+    .em-caption        { color:#D4106A!important; }
+    .em-tag-line       { color:#3a3a3a!important; }
+    .em-brushstroke    { background-color:#111111!important; }
+    .em-brushstroke span { color:#ffffff!important; }
+    .em-fomo-border    { border-color:#D4106A!important; }
+    .em-fomo-title     { color:#D4106A!important; }
+    .em-fomo-body      { color:#111111!important; }
+    .em-cta-bg         { background-color:#111111!important; }
+    .em-cta a          { color:#ffffff!important; background-color:#111111!important; }
+    .em-trust-text     { color:#111111!important; }
+    .em-trust-div      { border-color:#C9B98A!important; }
+    .em-footer-div     { border-color:#BBA97A!important; }
+    .em-social img     { filter:none!important; }
+
+    /* ── DARK MODE ── */
+    @media (prefers-color-scheme:dark){
+      body,.em-bg        { background-color:#1C1A14!important; }
+      .em-card           { background-color:#252318!important; }
+      .em-trust-bg       { background-color:#2E2B1F!important; }
+      .em-rule           { border-color:#F0EAD6!important; }
+      .em-rule-soft      { border-color:#4A4535!important; }
+      .em-rule-dot       { border-color:#4A4535!important; }
+      .em-logo           { color:#F0EAD6!important; }
+      .em-nav a          { color:#F0EAD6!important; }
+      .em-nav-div        { border-color:#6A5F40!important; }
+      .em-text           { color:#F0EAD6!important; }
+      .em-text-mid       { color:#C8BEA0!important; }
+      .em-text-muted     { color:#8A7D60!important; }
+      .em-text-link      { color:#D4B56A!important; }
+      .em-pink           { color:#F0237E!important; }
+      .em-gold           { color:#F5C218!important; }
+      .em-script         { color:#F0237E!important; }
+      .em-spotting       { color:#F0EAD6!important; }
+      .em-caption        { color:#F0237E!important; }
+      .em-tag-line       { color:#C8BEA0!important; }
+      .em-brushstroke    { background-color:#F0EAD6!important; }
+      .em-brushstroke span { color:#111111!important; }
+      .em-fomo-border    { border-color:#F0237E!important; }
+      .em-fomo-title     { color:#F0237E!important; }
+      .em-fomo-body      { color:#F0EAD6!important; }
+      .em-cta-bg         { background-color:#F0EAD6!important; }
+      .em-cta a          { color:#111111!important; background-color:#F0EAD6!important; }
+      .em-trust-text     { color:#F0EAD6!important; }
+      .em-trust-div      { border-color:#4A4535!important; }
+      .em-footer-div     { border-color:#4A4535!important; }
+      /* invert line-art icons for dark bg */
+      .em-icon           { filter:invert(1)!important; }
+      /* social icons become light */
+      .em-social img     { filter:invert(1)!important; }
+      /* polaroid frame stays white for authenticity */
+      .em-polaroid-frame { background-color:#ffffff!important; }
+    }
+
+    /* Outlook dark mode overrides (uses [data-ogsc]) */
+    [data-ogsc] body,
+    [data-ogsc] .em-bg        { background-color:#1C1A14!important; }
+    [data-ogsc] .em-card      { background-color:#252318!important; }
+    [data-ogsc] .em-logo      { color:#F0EAD6!important; }
+    [data-ogsc] .em-nav a     { color:#F0EAD6!important; }
+    [data-ogsc] .em-text      { color:#F0EAD6!important; }
+    [data-ogsc] .em-spotting  { color:#F0EAD6!important; }
+    [data-ogsc] .em-brushstroke { background-color:#F0EAD6!important; }
+    [data-ogsc] .em-brushstroke span { color:#111111!important; }
+    [data-ogsc] .em-cta-bg   { background-color:#F0EAD6!important; }
+    [data-ogsc] .em-cta a    { color:#111111!important; background-color:#F0EAD6!important; }
+    [data-ogsc] .em-icon      { filter:invert(1)!important; }
+
+    /* ── RESPONSIVE ── */
     @media screen and (max-width:600px){
-      .email-container{width:100%!important;}
-      .fluid{max-width:100%!important;height:auto!important;}
-      .pad{padding-left:18px!important;padding-right:18px!important;}
-      .logo-word{font-size:30px!important;letter-spacing:6px!important;}
-      .celebrity-script{font-size:54px!important;line-height:50px!important;}
-      .spotting{font-size:16px!important;letter-spacing:7px!important;padding-left:7px!important;}
-      .raglan-text{font-size:32px!important;}
-      .side-emoji{font-size:30px!important;}
-      .app-col{display:block!important;width:100%!important;text-align:center!important;padding:6px 0!important;}
-      .cta a{font-size:12px!important;letter-spacing:1.5px!important;padding:16px 26px!important;}
+      .email-container { width:100%!important; }
+      .fluid           { max-width:100%!important; height:auto!important; }
+      .pad             { padding-left:18px!important; padding-right:18px!important; }
+
+      /* Logo scales fluidly */
+      .em-logo         { font-size:clamp(22px,8vw,36px)!important; letter-spacing:clamp(4px,2vw,8px)!important; }
+
+      .em-nav-link     { font-size:11px!important; padding:0 20px!important; }
+      .celebrity-script{ font-size:clamp(44px,14vw,68px)!important; line-height:1!important; }
+      .spotting-text   { font-size:clamp(14px,5vw,21px)!important; letter-spacing:clamp(6px,3vw,12px)!important; padding-left:6px!important; }
+      .raglan-text     { font-size:clamp(28px,9vw,38px)!important; }
+      .fomo-title      { font-size:clamp(14px,4.5vw,17px)!important; }
+      .fomo-body       { font-size:clamp(11px,3.2vw,13px)!important; }
+      .cta-text        { font-size:clamp(11px,3.5vw,13px)!important; letter-spacing:clamp(1px,0.5vw,2.5px)!important; padding:15px 26px!important; }
+      .trust-text      { font-size:clamp(9px,2.5vw,11px)!important; }
+      .side-emoji      { font-size:clamp(24px,8vw,38px)!important; }
+      .app-col         { display:block!important; width:100%!important; text-align:center!important; padding:6px 0!important; }
+      .footer-logo     { font-size:clamp(18px,6vw,26px)!important; letter-spacing:clamp(3px,1.5vw,6px)!important; }
     }
   </style>
 </head>
-<body width="100%" style="margin:0;padding:0!important;mso-line-height-rule:exactly;background-color:#F5EDD6;">
-<center style="width:100%;background-color:#F5EDD6;">
+
+<body width="100%" class="em-bg" style="margin:0;padding:0!important;mso-line-height-rule:exactly;background-color:#F5EDD6;">
+<center style="width:100%;" class="em-bg">
 
   <!-- Preheader -->
-  <div style="display:none;font-size:1px;line-height:1px;max-height:0;max-width:0;opacity:0;overflow:hidden;mso-hide:all;font-family:sans-serif;">
+  <div style="display:none;font-size:1px;line-height:1px;max-height:0;max-width:0;opacity:0;overflow:hidden;mso-hide:all;">
     📸 Style Spotted! Mira Rajput in the Raglan Tee — Don't miss our latest collection, sizes going fast!
     &#847;&#847;&#847;&#847;&#847;&#847;&#847;&#847;&#847;&#847;&#847;&#847;&#847;&#847;&#847;&#847;&#847;&#847;&#847;&#847;
   </div>
@@ -47,57 +143,72 @@
   <div style="max-width:600px;margin:0 auto;" class="email-container">
   <!--[if mso]><table role="presentation" align="center" border="0" cellpadding="0" cellspacing="0" width="600"><tr><td bgcolor="#FAF4E4"><![endif]-->
 
-  <table role="presentation" align="center" border="0" cellpadding="0" cellspacing="0" width="100%" style="max-width:600px;background-color:#FAF4E4;">
+  <table role="presentation" align="center" border="0" cellpadding="0" cellspacing="0" width="100%" class="em-card" style="max-width:600px;background-color:#FAF4E4;">
 
     <!-- ══ TOP RULE ══ -->
-    <tr><td style="padding:0 22px;"><table role="presentation" width="100%" border="0" cellpadding="0" cellspacing="0"><tr><td style="border-top:2.5px solid #111111;font-size:0;line-height:0;height:2px;">&nbsp;</td></tr></table></td></tr>
+    <tr><td style="padding:0 22px;">
+      <table role="presentation" width="100%" border="0" cellpadding="0" cellspacing="0">
+        <tr><td class="em-rule" style="border-top:2.5px solid #111111;font-size:0;line-height:0;height:2px;">&nbsp;</td></tr>
+      </table>
+    </td></tr>
 
-    <!-- ══ LOGO WORDMARK (black, crisp — matches reference image 4) ══ -->
+    <!-- ══ LOGO — responsive, light & dark ══ -->
     <tr>
-      <td style="padding:22px 22px 18px;text-align:center;">
+      <td style="padding:22px 22px 16px;text-align:center;">
         <a href="https://uptownie.com/" target="_blank" style="text-decoration:none;">
-          <span class="logo-word" style="font-family:'Oswald','Arial Black',Arial,sans-serif;font-size:42px;line-height:44px;letter-spacing:9px;font-weight:700;color:#111111;text-transform:uppercase;">Uptownie</span>
+          <!--[if mso]><span style="font-family:Arial Black,Arial,sans-serif;font-size:38px;letter-spacing:8px;font-weight:900;color:#111111;text-transform:uppercase;mso-line-height-rule:exactly;">UPTOWNIE</span><![endif]-->
+          <!--[if !mso]><!-->
+          <span class="em-logo" style="font-family:'Oswald','Arial Black',Impact,Arial,sans-serif;font-size:38px;line-height:1.1;letter-spacing:8px;font-weight:700;color:#111111;text-transform:uppercase;display:inline-block;">UPTOWNIE</span>
+          <!--<![endif]-->
         </a>
       </td>
     </tr>
 
     <!-- ══ NAV ══ -->
-    <tr><td style="padding:0 22px;"><table role="presentation" width="100%" border="0" cellpadding="0" cellspacing="0"><tr><td style="border-top:1px solid #111111;font-size:0;line-height:0;">&nbsp;</td></tr></table></td></tr>
+    <tr><td style="padding:0 22px;">
+      <table role="presentation" width="100%" border="0" cellpadding="0" cellspacing="0">
+        <tr><td class="em-rule" style="border-top:1px solid #111111;font-size:0;line-height:0;">&nbsp;</td></tr>
+      </table>
+    </td></tr>
     <tr>
-      <td style="padding:11px 22px 12px;text-align:center;">
+      <td style="padding:11px 22px 12px;text-align:center;" class="em-nav">
         <table role="presentation" align="center" border="0" cellpadding="0" cellspacing="0"><tr>
-          <td><a href="https://uptownie.com/" target="_blank" style="display:inline-block;padding:0 32px;font-family:Arial,Helvetica,sans-serif;font-size:12px;letter-spacing:2.5px;font-weight:bold;text-transform:uppercase;color:#111111;">Main Page</a></td>
-          <td style="border-left:1px solid #BBA97A;height:16px;font-size:0;">&nbsp;</td>
-          <td><a href="https://uptownie.com/collections/new-in" target="_blank" style="display:inline-block;padding:0 32px;font-family:Arial,Helvetica,sans-serif;font-size:12px;letter-spacing:2.5px;font-weight:bold;text-transform:uppercase;color:#111111;">New In</a></td>
+          <td><a href="https://uptownie.com/" target="_blank" class="em-nav-link" style="display:inline-block;padding:0 32px;font-family:'Montserrat',Arial,sans-serif;font-size:12px;letter-spacing:2.5px;font-weight:700;text-transform:uppercase;color:#111111;">Main Page</a></td>
+          <td class="em-nav-div" style="border-left:1px solid #BBA97A;height:16px;font-size:0;">&nbsp;</td>
+          <td><a href="https://uptownie.com/collections/new-in" target="_blank" class="em-nav-link" style="display:inline-block;padding:0 32px;font-family:'Montserrat',Arial,sans-serif;font-size:12px;letter-spacing:2.5px;font-weight:700;text-transform:uppercase;color:#111111;">New In</a></td>
         </tr></table>
       </td>
     </tr>
-    <tr><td style="padding:0 22px;"><table role="presentation" width="100%" border="0" cellpadding="0" cellspacing="0"><tr><td style="border-top:1px solid #111111;font-size:0;line-height:0;">&nbsp;</td></tr></table></td></tr>
+    <tr><td style="padding:0 22px;">
+      <table role="presentation" width="100%" border="0" cellpadding="0" cellspacing="0">
+        <tr><td class="em-rule" style="border-top:1px solid #111111;font-size:0;line-height:0;">&nbsp;</td></tr>
+      </table>
+    </td></tr>
 
-    <!-- ══ CELEBRITY SPOTTING (centered) ══ -->
+    <!-- ══ CELEBRITY SPOTTING ══ -->
     <tr>
-      <td style="padding:38px 16px 0;text-align:center;background-color:#FAF4E4;">
+      <td style="padding:38px 16px 0;text-align:center;">
         <table role="presentation" align="center" border="0" cellpadding="0" cellspacing="0"><tr>
-          <td width="56" class="side-emoji" style="text-align:center;vertical-align:middle;font-family:Arial,sans-serif;font-size:38px;line-height:1;color:#F5C218;">&#9788;</td>
-          <td style="text-align:center;vertical-align:middle;">
-            <p class="celebrity-script" style="margin:0;font-family:'Great Vibes','Brush Script MT',cursive;font-size:68px;line-height:60px;color:#D4106A;font-weight:400;">Celebrity</p>
+          <td width="54" class="side-emoji" style="text-align:center;vertical-align:middle;font-size:38px;line-height:1;padding-bottom:6px;">
+            <span class="em-gold" style="color:#F5C218;">&#9788;</span>
           </td>
-          <td width="56" class="side-emoji" style="text-align:center;vertical-align:middle;font-family:Arial,sans-serif;font-size:38px;line-height:1;">🌴</td>
+          <td style="text-align:center;vertical-align:middle;">
+            <p class="celebrity-script em-script" style="margin:0;font-family:'Great Vibes','Brush Script MT',cursive;font-size:68px;line-height:1;color:#D4106A;font-weight:400;">Celebrity</p>
+          </td>
+          <td width="54" class="side-emoji" style="text-align:center;vertical-align:middle;font-size:38px;line-height:1;padding-bottom:6px;">🌴</td>
         </tr></table>
-        <p style="margin:8px 0 0;font-family:Arial,sans-serif;font-size:18px;color:#D4106A;line-height:1;">&#10026;</p>
-        <p class="spotting" style="margin:8px 0 0;font-family:'Playfair Display',Georgia,serif;font-size:21px;line-height:26px;letter-spacing:12px;text-transform:uppercase;color:#111111;font-weight:800;padding-left:12px;">Spotting</p>
-        <p style="margin:8px 0 0;font-family:'Great Vibes',cursive;font-size:18px;color:#F5C218;letter-spacing:-1px;">&#12316;&#12316;&#12316;&#12316;&#12316;</p>
+        <p style="margin:6px 0 0;font-size:18px;color:#D4106A;" class="em-pink">&#10026;</p>
+        <p class="spotting-text em-spotting" style="margin:8px 0 0;font-family:'Playfair Display',Georgia,serif;font-size:21px;line-height:1.2;letter-spacing:12px;text-transform:uppercase;color:#111111;font-weight:900;padding-left:12px;">Spotting</p>
+        <p style="margin:8px 0 0;font-family:'Great Vibes',cursive;font-size:18px;letter-spacing:-1px;" class="em-gold">&#12316;&#12316;&#12316;&#12316;&#12316;</p>
       </td>
     </tr>
 
-    <!-- ══ POLAROID (single column, centered, tape fixed) ══ -->
+    <!-- ══ POLAROID ══ -->
     <tr>
-      <td style="padding:26px 24px 0;text-align:center;background-color:#FAF4E4;">
-        <!--[if mso]>
-        <table role="presentation" align="center" border="0" cellpadding="0" cellspacing="0" width="380"><tr><td align="center">
-        <![endif]-->
+      <td style="padding:26px 24px 0;text-align:center;">
+        <!--[if mso]><table role="presentation" align="center" border="0" cellpadding="0" cellspacing="0" width="380"><tr><td align="center"><![endif]-->
         <table role="presentation" align="center" border="0" cellpadding="0" cellspacing="0" style="margin:0 auto;">
-          <!-- washi tape (flush above frame — no floating gap) -->
+          <!-- washi tape (flush, pink) -->
           <tr>
             <td align="center" style="font-size:0;line-height:0;">
               <table role="presentation" align="center" border="0" cellpadding="0" cellspacing="0">
@@ -105,10 +216,10 @@
               </table>
             </td>
           </tr>
-          <!-- polaroid frame -->
+          <!-- frame -->
           <tr>
             <td align="center">
-              <table role="presentation" align="center" border="0" cellpadding="0" cellspacing="0" style="margin:0 auto;background-color:#ffffff;box-shadow:3px 6px 28px rgba(0,0,0,0.16);">
+              <table role="presentation" align="center" border="0" cellpadding="0" cellspacing="0" class="em-polaroid-frame" style="margin:0 auto;background-color:#ffffff;box-shadow:3px 6px 28px rgba(0,0,0,0.16);">
                 <tr>
                   <td style="padding:13px 13px 0;">
                     <a href="https://uptownie.com/products/180-gsm-cotton-lycra-contrast-raglan-tee-1" target="_blank">
@@ -118,59 +229,57 @@
                 </tr>
                 <tr>
                   <td style="padding:12px 16px 18px;text-align:center;">
-                    <span style="font-family:'Caveat','Brush Script MT',cursive;font-size:30px;line-height:32px;color:#D4106A;font-weight:700;">&#10217;&nbsp;Mira Rajput&nbsp;&#10216;</span>
+                    <span class="em-caption" style="font-family:'Caveat','Brush Script MT',cursive;font-size:30px;line-height:1;color:#D4106A;font-weight:700;">&#10217;&nbsp;Mira Rajput&nbsp;&#10216;</span>
                   </td>
                 </tr>
               </table>
             </td>
           </tr>
         </table>
-        <!--[if mso]>
-        </td></tr></table>
-        <![endif]-->
-        <!-- centered handwritten tagline (replaces side sticky note) -->
-        <p style="margin:16px 0 0;font-family:'Caveat','Brush Script MT',cursive;font-size:24px;line-height:26px;color:#3a3a3a;">
-          Style Spotted. You'll Love It. <span style="color:#D4106A;">&#9825;</span>
+        <!--[if mso]></td></tr></table><![endif]-->
+        <!-- tagline below polaroid -->
+        <p class="em-tag-line" style="margin:14px 0 0;font-family:'Caveat','Brush Script MT',cursive;font-size:24px;line-height:1.2;color:#3a3a3a;text-align:center;">
+          Style Spotted. You'll Love It. <span class="em-pink" style="color:#D4106A;">&#9825;</span>
         </p>
       </td>
     </tr>
 
-    <!-- ══ RAGLAN TEE (black block — brand color) ══ -->
+    <!-- ══ RAGLAN TEE on brushstroke ══ -->
     <tr>
-      <td style="padding:30px 40px 0;text-align:center;background-color:#FAF4E4;">
+      <td style="padding:30px 40px 0;text-align:center;">
         <table role="presentation" align="center" border="0" cellpadding="0" cellspacing="0" style="margin:0 auto;">
           <tr>
-            <td style="background-color:#111111;padding:13px 42px 12px;border-radius:4px;">
-              <span class="raglan-text" style="font-family:'Great Vibes','Brush Script MT',cursive;font-size:38px;line-height:40px;color:#ffffff;font-weight:400;">Raglan Tee</span>
+            <td class="em-brushstroke" style="background-color:#111111;padding:13px 42px 12px;border-radius:4px;">
+              <span class="raglan-text em-brushstroke" style="font-family:'Great Vibes','Brush Script MT',cursive;font-size:38px;line-height:1.1;color:#ffffff;font-weight:400;">Raglan Tee</span>
             </td>
           </tr>
         </table>
-        <p style="margin:18px 0 0;font-family:Arial,Helvetica,sans-serif;font-size:12px;line-height:18px;letter-spacing:5px;text-transform:uppercase;color:#555555;font-weight:bold;">Seen On</p>
-        <p style="margin:4px 0 0;font-family:Arial,Helvetica,sans-serif;font-size:13px;line-height:18px;letter-spacing:5px;text-transform:uppercase;color:#D4106A;font-weight:bold;">Mira Rajput</p>
+        <p class="em-text-mid" style="margin:18px 0 0;font-family:'Montserrat',Arial,sans-serif;font-size:11px;line-height:1.5;letter-spacing:5px;text-transform:uppercase;color:#555555;font-weight:600;">Seen On</p>
+        <p class="em-pink" style="margin:5px 0 0;font-family:'Montserrat',Arial,sans-serif;font-size:12px;line-height:1.5;letter-spacing:5px;text-transform:uppercase;color:#D4106A;font-weight:800;">Mira Rajput</p>
       </td>
     </tr>
 
-    <!-- ══ FOMO BOX (dotted, centered) ══ -->
+    <!-- ══ FOMO BOX ══ -->
     <tr>
-      <td class="pad" style="padding:26px 40px 0;background-color:#FAF4E4;">
-        <table role="presentation" border="0" cellpadding="0" cellspacing="0" width="100%" style="border:2px dashed #D4106A;border-radius:8px;">
+      <td class="pad" style="padding:26px 40px 0;">
+        <table role="presentation" border="0" cellpadding="0" cellspacing="0" width="100%" class="em-fomo-border" style="border:2px dashed #D4106A;border-radius:8px;">
           <tr>
             <td style="padding:22px 24px;text-align:center;">
-              <p style="margin:0 0 8px;font-family:Arial,Helvetica,sans-serif;font-size:17px;line-height:22px;letter-spacing:1px;font-weight:900;text-transform:uppercase;color:#D4106A;">&#9889; Don't Miss Out!</p>
-              <p style="margin:0;font-family:Arial,Helvetica,sans-serif;font-size:12px;line-height:19px;letter-spacing:1px;font-weight:bold;text-transform:uppercase;color:#111111;">Our latest collection is made for you.<br>Sizes are selling fast.</p>
+              <p class="fomo-title em-fomo-title" style="margin:0 0 8px;font-family:'Montserrat',Arial,sans-serif;font-size:17px;line-height:1.3;letter-spacing:1px;font-weight:900;text-transform:uppercase;color:#D4106A;">&#9889; Don't Miss Out!</p>
+              <p class="fomo-body em-fomo-body" style="margin:0;font-family:'Montserrat',Arial,sans-serif;font-size:12px;line-height:1.7;letter-spacing:1px;font-weight:700;text-transform:uppercase;color:#111111;">Our latest collection is made for you.<br>Sizes are selling fast.</p>
             </td>
           </tr>
         </table>
       </td>
     </tr>
 
-    <!-- ══ EXPLORE LATEST COLLECTION (BLACK — brand color) ══ -->
+    <!-- ══ CTA BUTTON — brand black ══ -->
     <tr>
-      <td class="cta" style="padding:26px 40px 42px;text-align:center;background-color:#FAF4E4;">
-        <table role="presentation" align="center" border="0" cellpadding="0" cellspacing="0" style="margin:0 auto;">
+      <td class="pad" style="padding:24px 40px 42px;text-align:center;">
+        <table role="presentation" align="center" border="0" cellpadding="0" cellspacing="0" class="em-cta" style="margin:0 auto;">
           <tr>
-            <td style="background-color:#111111;border-radius:2px;">
-              <a href="https://uptownie.com/collections/new-in" target="_blank" style="display:inline-block;padding:17px 40px;font-family:Arial,Helvetica,sans-serif;font-size:13px;letter-spacing:2.5px;font-weight:bold;text-transform:uppercase;color:#ffffff;background-color:#111111;">
+            <td class="em-cta-bg" style="background-color:#111111;border-radius:2px;">
+              <a href="https://uptownie.com/collections/new-in" target="_blank" class="cta-text" style="display:inline-block;padding:17px 40px;font-family:'Montserrat',Arial,sans-serif;font-size:13px;letter-spacing:2.5px;font-weight:800;text-transform:uppercase;color:#ffffff;background-color:#111111;">
                 Explore Latest Collection
               </a>
             </td>
@@ -181,26 +290,26 @@
 
     <!-- ══ TRUST BADGES ══ -->
     <tr>
-      <td style="background-color:#EDE3C8;border-top:1px solid #D8CBA4;border-bottom:1px solid #D8CBA4;">
+      <td class="em-trust-bg em-rule-soft" style="background-color:#EDE3C8;border-top:1px solid #D8CBA4;border-bottom:1px solid #D8CBA4;">
         <table role="presentation" border="0" cellpadding="0" cellspacing="0" width="100%"><tr>
           <td style="padding:22px 6px;text-align:center;width:33.33%;">
             <a href="https://uptownie.com/" target="_blank" style="text-decoration:none;display:inline-block;">
-              <img src="https://img.icons8.com/ios/100/111111/box.png" width="36" height="36" alt="" style="display:block;margin:0 auto 7px;">
-              <span style="font-family:Arial,sans-serif;font-size:10px;line-height:14px;letter-spacing:1px;font-weight:bold;text-transform:uppercase;color:#111111;">COD<br>Available</span>
+              <img src="https://img.icons8.com/ios/100/111111/box.png" width="36" height="36" alt="" class="em-icon" style="display:block;margin:0 auto 7px;">
+              <span class="trust-text em-trust-text" style="font-family:'Montserrat',Arial,sans-serif;font-size:10px;line-height:1.5;letter-spacing:1px;font-weight:700;text-transform:uppercase;color:#111111;">COD<br>Available</span>
             </a>
           </td>
-          <td style="border-left:1px solid #C9B98A;width:1px;font-size:0;">&nbsp;</td>
+          <td class="em-trust-div" style="border-left:1px solid #C9B98A;width:1px;font-size:0;">&nbsp;</td>
           <td style="padding:22px 6px;text-align:center;width:33.34%;">
             <a href="https://uptownie.com/" target="_blank" style="text-decoration:none;display:inline-block;">
-              <img src="https://img.icons8.com/ios/100/111111/in-transit.png" width="36" height="36" alt="" style="display:block;margin:0 auto 7px;">
-              <span style="font-family:Arial,sans-serif;font-size:10px;line-height:14px;letter-spacing:1px;font-weight:bold;text-transform:uppercase;color:#111111;">4-6 Days<br>Delivery</span>
+              <img src="https://img.icons8.com/ios/100/111111/in-transit.png" width="36" height="36" alt="" class="em-icon" style="display:block;margin:0 auto 7px;">
+              <span class="trust-text em-trust-text" style="font-family:'Montserrat',Arial,sans-serif;font-size:10px;line-height:1.5;letter-spacing:1px;font-weight:700;text-transform:uppercase;color:#111111;">4-6 Days<br>Delivery</span>
             </a>
           </td>
-          <td style="border-left:1px solid #C9B98A;width:1px;font-size:0;">&nbsp;</td>
+          <td class="em-trust-div" style="border-left:1px solid #C9B98A;width:1px;font-size:0;">&nbsp;</td>
           <td style="padding:22px 6px;text-align:center;width:33.33%;">
             <a href="https://uptownie.com/" target="_blank" style="text-decoration:none;display:inline-block;">
-              <img src="https://img.icons8.com/ios/100/111111/return-purchase.png" width="36" height="36" alt="" style="display:block;margin:0 auto 7px;">
-              <span style="font-family:Arial,sans-serif;font-size:10px;line-height:14px;letter-spacing:1px;font-weight:bold;text-transform:uppercase;color:#111111;">Easy<br>Returns</span>
+              <img src="https://img.icons8.com/ios/100/111111/return-purchase.png" width="36" height="36" alt="" class="em-icon" style="display:block;margin:0 auto 7px;">
+              <span class="trust-text em-trust-text" style="font-family:'Montserrat',Arial,sans-serif;font-size:10px;line-height:1.5;letter-spacing:1px;font-weight:700;text-transform:uppercase;color:#111111;">Easy<br>Returns</span>
             </a>
           </td>
         </tr></table>
@@ -209,14 +318,16 @@
 
     <!-- dotted divider -->
     <tr>
-      <td style="padding:24px 30px 4px;background-color:#FAF4E4;">
-        <table role="presentation" border="0" cellpadding="0" cellspacing="0" width="100%"><tr><td style="border-top:2px dotted #C9B98A;font-size:0;line-height:0;">&nbsp;</td></tr></table>
+      <td style="padding:24px 30px 4px;">
+        <table role="presentation" border="0" cellpadding="0" cellspacing="0" width="100%">
+          <tr><td class="em-rule-dot" style="border-top:2px dotted #C9B98A;font-size:0;line-height:0;">&nbsp;</td></tr>
+        </table>
       </td>
     </tr>
 
-    <!-- ══ APP BADGES (centered, stack on mobile) ══ -->
+    <!-- ══ APP BADGES ══ -->
     <tr>
-      <td style="padding:18px 24px 32px;text-align:center;background-color:#FAF4E4;">
+      <td style="padding:18px 24px 32px;text-align:center;">
         <table role="presentation" align="center" border="0" cellpadding="0" cellspacing="0" style="margin:0 auto;"><tr>
           <td class="app-col" align="center" style="padding:0 6px;">
             <a href="https://play.google.com/store/search?q=uptownie&c=apps" target="_blank">
@@ -224,8 +335,8 @@
                 <tr>
                   <td style="padding:10px 14px;"><img src="https://img.icons8.com/color/48/google-play.png" width="22" height="22" alt="" style="display:inline-block;vertical-align:middle;"></td>
                   <td style="padding:10px 18px 10px 0;">
-                    <span style="font-family:Arial,sans-serif;font-size:9px;letter-spacing:1px;color:#cccccc;text-transform:uppercase;">Get it on</span><br>
-                    <span style="font-family:Arial,sans-serif;font-size:16px;line-height:18px;color:#ffffff;font-weight:bold;">Google Play</span>
+                    <span style="font-family:'Montserrat',Arial,sans-serif;font-size:9px;letter-spacing:1px;color:#cccccc;text-transform:uppercase;font-weight:600;">Get it on</span><br>
+                    <span style="font-family:'Montserrat',Arial,sans-serif;font-size:15px;line-height:1.2;color:#ffffff;font-weight:800;">Google Play</span>
                   </td>
                 </tr>
               </table>
@@ -237,8 +348,8 @@
                 <tr>
                   <td style="padding:10px 14px;"><img src="https://img.icons8.com/ios-filled/50/ffffff/mac-os.png" width="22" height="22" alt="" style="display:inline-block;vertical-align:middle;"></td>
                   <td style="padding:10px 18px 10px 0;">
-                    <span style="font-family:Arial,sans-serif;font-size:9px;letter-spacing:1px;color:#cccccc;text-transform:uppercase;">Download on the</span><br>
-                    <span style="font-family:Arial,sans-serif;font-size:16px;line-height:18px;color:#ffffff;font-weight:bold;">App Store</span>
+                    <span style="font-family:'Montserrat',Arial,sans-serif;font-size:9px;letter-spacing:1px;color:#cccccc;text-transform:uppercase;font-weight:600;">Download on the</span><br>
+                    <span style="font-family:'Montserrat',Arial,sans-serif;font-size:15px;line-height:1.2;color:#ffffff;font-weight:800;">App Store</span>
                   </td>
                 </tr>
               </table>
@@ -249,24 +360,28 @@
     </tr>
 
     <!-- ══ FOOTER RULE ══ -->
-    <tr><td style="padding:0 22px;"><table role="presentation" width="100%" border="0" cellpadding="0" cellspacing="0"><tr><td style="border-top:1px solid #111111;font-size:0;line-height:0;">&nbsp;</td></tr></table></td></tr>
+    <tr><td style="padding:0 22px;">
+      <table role="presentation" width="100%" border="0" cellpadding="0" cellspacing="0">
+        <tr><td class="em-rule" style="border-top:1px solid #111111;font-size:0;line-height:0;">&nbsp;</td></tr>
+      </table>
+    </td></tr>
 
-    <!-- ══ FOOTER: wordmark + social (centered) ══ -->
+    <!-- ══ FOOTER: wordmark + social ══ -->
     <tr>
-      <td style="padding:22px 24px 12px;text-align:center;">
+      <td style="padding:20px 24px 12px;text-align:center;">
         <table role="presentation" align="center" border="0" cellpadding="0" cellspacing="0"><tr>
           <td style="padding:0 16px 0 0;vertical-align:middle;">
             <a href="https://uptownie.com/" target="_blank" style="text-decoration:none;">
-              <span style="font-family:'Oswald','Arial Black',Arial,sans-serif;font-size:26px;line-height:28px;letter-spacing:6px;font-weight:700;color:#111111;text-transform:uppercase;">Uptownie</span>
+              <span class="footer-logo em-logo" style="font-family:'Oswald','Arial Black',Impact,Arial,sans-serif;font-size:24px;line-height:1.1;letter-spacing:6px;font-weight:700;color:#111111;text-transform:uppercase;">Uptownie</span>
             </a>
           </td>
-          <td style="border-left:1px solid #BBA97A;height:22px;font-size:0;vertical-align:middle;">&nbsp;</td>
-          <td style="padding:0 0 0 16px;vertical-align:middle;">
+          <td class="em-footer-div" style="border-left:1px solid #BBA97A;height:22px;font-size:0;vertical-align:middle;">&nbsp;</td>
+          <td style="padding:0 0 0 16px;vertical-align:middle;" class="em-social">
             <a href="https://www.facebook.com/uptownie" target="_blank">
-              <img src="https://img.icons8.com/ios-filled/50/111111/facebook-new.png" width="26" height="26" alt="Facebook" style="display:inline-block;vertical-align:middle;margin:0 5px;">
+              <img src="https://img.icons8.com/ios-filled/50/111111/facebook-new.png" width="24" height="24" alt="Facebook" style="display:inline-block;vertical-align:middle;margin:0 5px;">
             </a>
             <a href="https://www.instagram.com/uptownie101/" target="_blank">
-              <img src="https://img.icons8.com/ios-filled/50/111111/instagram-new.png" width="26" height="26" alt="Instagram" style="display:inline-block;vertical-align:middle;margin:0 5px;">
+              <img src="https://img.icons8.com/ios-filled/50/111111/instagram-new.png" width="24" height="24" alt="Instagram" style="display:inline-block;vertical-align:middle;margin:0 5px;">
             </a>
           </td>
         </tr></table>
@@ -274,15 +389,14 @@
     </tr>
     <tr>
       <td style="padding:4px 40px 30px;text-align:center;">
-        <p style="margin:0;font-family:Arial,sans-serif;font-size:11px;line-height:18px;color:#A4977A;">
-          Shop the celebrity edit at <a href="https://uptownie.com/" target="_blank" style="color:#7A6E52;text-decoration:underline;">uptownie.com</a><br>
+        <p class="em-text-muted" style="margin:0;font-family:'Montserrat',Arial,sans-serif;font-size:11px;line-height:1.7;color:#A4977A;font-weight:400;">
+          Shop the celebrity edit at <a href="https://uptownie.com/" target="_blank" class="em-text-link" style="color:#7A6E52;text-decoration:underline;">uptownie.com</a><br>
           You're receiving this because you viewed the Contrast Raglan Tee on Uptownie.
         </p>
       </td>
     </tr>
 
   </table>
-
   <!--[if mso]></td></tr></table><![endif]-->
   </div>
 </center>
