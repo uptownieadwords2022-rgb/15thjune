@@ -67,6 +67,8 @@
       .em-footer-div           { border-color:#444444!important; }
       .em-icon                 { filter:invert(1)!important; }
       .em-social-icon          { filter:invert(1)!important; }
+      .em-product-bg           { background-color:#2A2A2A!important; }
+      .em-product-label        { color:#AAAAAA!important; }
     }
 
     /* Outlook dark */
@@ -83,6 +85,8 @@
     [data-ogsc] .em-nav-link   { color:#F0EDE6!important; }
     [data-ogsc] .em-icon       { filter:invert(1)!important; }
     [data-ogsc] .em-social-icon{ filter:invert(1)!important; }
+    [data-ogsc] .em-product-bg { background-color:#2A2A2A!important; }
+    [data-ogsc] .em-product-label { color:#AAAAAA!important; }
 
     /* ── RESPONSIVE ── */
     @media screen and (max-width:600px){
@@ -148,56 +152,61 @@
     </td></tr>
 
   <!-- ╔══════════════════════════════════════════╗ -->
-  <!-- ║  SECTION 1 — HERO                        ║ -->
+  <!-- ║  SECTION 1 — HERO (split panel)          ║ -->
   <!-- ╚══════════════════════════════════════════╝ -->
 
-    <!-- Hero image with overlay text -->
+    <!-- 2-column hero: celebrity photo LEFT, product flatlay RIGHT -->
     <tr>
-      <td class="em-s1" style="padding:0;background-color:#ffffff;">
+      <td class="em-s1" style="padding:0;background-color:#ffffff;font-size:0;line-height:0;">
+        <table role="presentation" border="0" cellpadding="0" cellspacing="0" width="100%">
+          <tr>
+            <!-- LEFT — celebrity paparazzi photo -->
+            <td width="55%" style="padding:0;vertical-align:top;width:55%;">
+              <a href="https://uptownie.com/products/180-gsm-cotton-lycra-contrast-raglan-tee-1" target="_blank" style="display:block;line-height:0;">
+                <img src="https://cdn.shopify.com/s/files/1/1780/3381/files/CELEBRITY_X_PUJA_CREATIVE.jpg?v=1781508640"
+                     width="330" alt="Mira Rajput in Raglan Tee"
+                     style="display:block;width:100%;max-width:330px;height:auto;">
+              </a>
+            </td>
+            <!-- RIGHT — product flatlay + price -->
+            <td width="45%" class="em-product-bg" style="padding:0;vertical-align:top;width:45%;background-color:#F2F4F5;text-align:center;">
+              <a href="https://uptownie.com/products/180-gsm-cotton-lycra-contrast-raglan-tee-1" target="_blank" style="display:block;line-height:0;">
+                <img src="https://cdn.shopify.com/s/files/1/1780/3381/files/12_706edc6e-3aec-466d-96d3-98b8438cb7df.png?v=1781069774"
+                     width="270" alt="180 GSM Cotton Lycra Contrast Raglan Tee"
+                     style="display:block;width:100%;max-width:270px;height:auto;">
+              </a>
+              <!-- Price badge -->
+              <div style="padding:10px 6px 4px;font-size:0;line-height:0;">
+                <span style="display:inline-block;background-color:#BDE3EF;border-radius:50px;padding:6px 14px;font-family:'Montserrat',Arial,sans-serif;font-size:11px;font-weight:800;color:#111111;letter-spacing:0.5px;line-height:1;">&#8377;&nbsp;780</span>
+              </div>
+              <!-- Product label -->
+              <p class="em-product-label" style="margin:0;padding:6px 6px 14px;font-family:'Montserrat',Arial,sans-serif;font-size:8.5px;line-height:1.6;letter-spacing:0.5px;font-weight:600;text-transform:uppercase;color:#555555;">180 GSM Cotton Lycra<br>Contrast Raglan Tee</p>
+            </td>
+          </tr>
+        </table>
+      </td>
+    </tr>
 
-        <!-- Modern clients: position:relative + position:absolute overlay -->
-        <!--[if !mso]><!-->
-        <div style="position:relative;font-size:0;line-height:0;">
-          <a href="https://uptownie.com/products/180-gsm-cotton-lycra-contrast-raglan-tee-1" target="_blank" style="display:block;line-height:0;">
-            <img src="https://cdn.shopify.com/s/files/1/1780/3381/files/CELEBRITY_X_PUJA_CREATIVE.jpg?v=1781508640"
-                 width="600" alt="Mira Rajput wearing the Uptownie Raglan Tee"
-                 class="fluid"
-                 style="width:100%;max-width:600px;height:auto;display:block;">
-          </a>
-          <!-- light overlay so black text reads over the photo -->
-          <div style="position:absolute;top:0;left:0;right:0;bottom:0;background:linear-gradient(to bottom,rgba(255,255,255,0.25) 0%,transparent 40%,transparent 60%,rgba(255,255,255,0.20) 100%);pointer-events:none;"></div>
-          <!-- text overlay — centered on the image -->
-          <div style="position:absolute;top:50%;left:50%;-webkit-transform:translate(-50%,-50%);transform:translate(-50%,-50%);text-align:center;width:88%;pointer-events:none;">
-            <p class="hero-script" style="margin:0;font-family:'Great Vibes',cursive;font-size:72px;line-height:1;color:#111111;font-weight:400;text-shadow:0 1px 8px rgba(255,255,255,0.6);">Celebrity</p>
-            <p class="hero-spotting" style="margin:6px 0 0;font-family:'Montserrat',Arial,sans-serif;font-size:22px;line-height:1;letter-spacing:14px;font-weight:900;text-transform:uppercase;color:#111111;text-shadow:0 1px 4px rgba(255,255,255,0.5);padding-left:14px;">SPOTTING</p>
-          </div>
-        </div>
-        <!--<![endif]-->
+    <!-- CELEBRITY SPOTTING heading — below images, full width, centered -->
+    <tr>
+      <td class="em-s1" style="background-color:#ffffff;padding:30px 30px 6px;text-align:center;">
+        <p class="hero-script em-text" style="margin:0;font-family:'Great Vibes',cursive;font-size:72px;line-height:1;color:#111111;font-weight:400;">Celebrity</p>
+        <p class="hero-spotting em-text" style="margin:8px 0 0;font-family:'Montserrat',Arial,sans-serif;font-size:22px;line-height:1;letter-spacing:14px;font-weight:900;text-transform:uppercase;color:#111111;padding-left:14px;">SPOTTING</p>
+      </td>
+    </tr>
 
-        <!-- Outlook VML hero -->
-        <!--[if mso]>
-        <v:rect xmlns:v="urn:schemas-microsoft-com:vml" fill="true" stroke="false" style="width:600px;height:520px;">
-          <v:fill type="frame" src="https://cdn.shopify.com/s/files/1/1780/3381/files/CELEBRITY_X_PUJA_CREATIVE.jpg?v=1781508640" color="#222222"/>
-          <v:textbox inset="0,0,0,0">
-          <table role="presentation" border="0" cellpadding="0" cellspacing="0" width="600">
-            <tr><td height="190" style="font-size:0;line-height:0;">&nbsp;</td></tr>
-            <tr>
-              <td align="center" style="padding:0 48px;">
-                <p style="margin:0;font-family:Montserrat,Arial,sans-serif;font-size:64px;line-height:1;color:#111111;font-weight:400;">Celebrity</p>
-                <p style="margin:8px 0 0;font-family:Montserrat,Arial,sans-serif;font-size:18px;letter-spacing:10px;font-weight:900;text-transform:uppercase;color:#111111;">SPOTTING</p>
-              </td>
-            </tr>
-          </table>
-          </v:textbox>
-        </v:rect>
-        <![endif]-->
-
+    <!-- Rule -->
+    <tr>
+      <td class="em-s1" style="background-color:#ffffff;padding:20px 40px 0;">
+        <table role="presentation" width="100%" border="0" cellpadding="0" cellspacing="0">
+          <tr><td class="em-rule-light" style="border-top:1px solid #EEEEEE;font-size:0;line-height:0;">&nbsp;</td></tr>
+        </table>
       </td>
     </tr>
 
     <!-- MIRA RAJPUT SEEN IN -->
     <tr>
-      <td class="em-s1" style="background-color:#ffffff;padding:34px 40px 4px;text-align:center;">
+      <td class="em-s1" style="background-color:#ffffff;padding:24px 40px 4px;text-align:center;">
         <p class="em-text-mid" style="margin:0;font-family:'Montserrat',Arial,sans-serif;font-size:10px;letter-spacing:5px;font-weight:700;text-transform:uppercase;color:#555555;">MIRA RAJPUT SEEN IN</p>
       </td>
     </tr>
